@@ -8,22 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		330C18321F62454A009D70CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330C18311F62454A009D70CB /* AppDelegate.swift */; };
-		330C18341F62454A009D70CB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330C18331F62454A009D70CB /* ViewController.swift */; };
+		330C18341F62454A009D70CB /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330C18331F62454A009D70CB /* CalculatorViewController.swift */; };
 		330C18371F62454A009D70CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 330C18351F62454A009D70CB /* Main.storyboard */; };
 		330C18391F62454A009D70CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 330C18381F62454A009D70CB /* Assets.xcassets */; };
 		330C183C1F62454A009D70CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 330C183A1F62454A009D70CB /* LaunchScreen.storyboard */; };
 		330C18451F64AF5F009D70CB /* CalculatorBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330C18441F64AF5F009D70CB /* CalculatorBrain.swift */; };
+		33D9E3641F6E457E0033FBF5 /* AxesDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D9E3631F6E457E0033FBF5 /* AxesDrawer.swift */; };
+		33D9E36E1F6E48C70033FBF5 /* GraphingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D9E36D1F6E48C70033FBF5 /* GraphingViewController.swift */; };
+		33D9E3721F6EE5070033FBF5 /* GraphingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D9E3711F6EE5070033FBF5 /* GraphingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		330C182E1F62454A009D70CB /* Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		330C18311F62454A009D70CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		330C18331F62454A009D70CB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		330C18331F62454A009D70CB /* CalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
 		330C18361F62454A009D70CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		330C18381F62454A009D70CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		330C183B1F62454A009D70CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		330C183D1F62454A009D70CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		330C18441F64AF5F009D70CB /* CalculatorBrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorBrain.swift; sourceTree = "<group>"; };
+		33D9E3631F6E457E0033FBF5 /* AxesDrawer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AxesDrawer.swift; sourceTree = "<group>"; };
+		33D9E36D1F6E48C70033FBF5 /* GraphingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphingViewController.swift; sourceTree = "<group>"; };
+		33D9E3711F6EE5070033FBF5 /* GraphingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,10 +62,13 @@
 		330C18301F62454A009D70CB /* Calculator */ = {
 			isa = PBXGroup;
 			children = (
+				33D9E3631F6E457E0033FBF5 /* AxesDrawer.swift */,
 				330C18431F624640009D70CB /* Supporting Files */,
-				330C18331F62454A009D70CB /* ViewController.swift */,
+				330C18331F62454A009D70CB /* CalculatorViewController.swift */,
 				330C18351F62454A009D70CB /* Main.storyboard */,
 				330C18441F64AF5F009D70CB /* CalculatorBrain.swift */,
+				33D9E36D1F6E48C70033FBF5 /* GraphingViewController.swift */,
+				33D9E3711F6EE5070033FBF5 /* GraphingView.swift */,
 			);
 			path = Calculator;
 			sourceTree = "<group>";
@@ -107,6 +116,7 @@
 				TargetAttributes = {
 					330C182D1F62454A009D70CB = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = WJ2E7F9N7E;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -147,8 +157,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33D9E3721F6EE5070033FBF5 /* GraphingView.swift in Sources */,
 				330C18451F64AF5F009D70CB /* CalculatorBrain.swift in Sources */,
-				330C18341F62454A009D70CB /* ViewController.swift in Sources */,
+				33D9E3641F6E457E0033FBF5 /* AxesDrawer.swift in Sources */,
+				33D9E36E1F6E48C70033FBF5 /* GraphingViewController.swift in Sources */,
+				330C18341F62454A009D70CB /* CalculatorViewController.swift in Sources */,
 				330C18321F62454A009D70CB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,6 +287,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = WJ2E7F9N7E;
 				INFOPLIST_FILE = Calculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.rice.comp446.s01214331.Calculator;
@@ -286,6 +300,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = WJ2E7F9N7E;
 				INFOPLIST_FILE = Calculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.rice.comp446.s01214331.Calculator;
