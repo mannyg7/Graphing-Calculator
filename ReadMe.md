@@ -1,5 +1,5 @@
 
 
 
-<img src="calculator.gif" width="50%">
-![](graphing.gif | width=50)
+<img src="calculator.gif" height="50%"/>
+<img src="graphing.gif" height="50%"/>
